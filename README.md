@@ -2,6 +2,9 @@
 
 This example is useful to get information with a session key (auth) after authorize your session with username and password.
 
+### File Structure
+
+`server/` part is example of your server and `mobile/` part is example of your mobile part. You should change your RewriteBase of `.htaccess`.
 
 ### Description:
 
