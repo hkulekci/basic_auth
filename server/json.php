@@ -109,26 +109,12 @@ if (!$session_started){
 
 ?>
 
+<?php if (isset($_GET['_route_']) && $_GET['_route'] == 'one'): ?>
    
-      ({
-	      "cateogry":[{
-	         "precision": "zip",
-	         "Latitude":  37.7668,
-	         "Longitude": -122.3959,
-	         "Address":   "",
-	         "City":      "SAN FRANCISCO",
-	         "State":     "CA",
-	         "Zip":       "94107",
-	         "Country":   "US"
-	      },
-	      {
-	         "precision": "zip",
-	         "Latitude":  37.371991,
-	         "Longitude": -122.026020,
-	         "Address":   "",
-	         "City":      "SUNNYVALE",
-	         "State":     "CA",
-	         "Zip":       "94085",
-	         "Country":   "US"
-	      }]
-      })
+    <?php include 'one.php'; ?>
+
+<?php else if (isset($_GET['_route_']) && $_GET['_route'] == 'two'): ?>
+
+	<?php include 'two.php'; ?>
+
+<?php endif; ?>
